@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    
+    <form>
+        <label for="first">First Name</label>
+        <input name="first" id="first" type="text" placeholder="Enter Your First Name" required>
+        <label for="mid">MId Name</label>
+        <input name="mid" id="mid" type="text" placeholder="Enter Your Middle Name" required>
+
+        <label for="last">Last Name</label>
+        <input name="last" id="last" type="text" placeholder="Enter Your Last Name" required>
+
+    <div>
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio" value="male">
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="other">Other</label>
+        <input id="other" name="gender" type="radio" value="other">
+    </div>
+    <div>
+        Email:
+        <input name="email" type="email" placeholder="Enter Your Email" required>
+        Password:
+        <input name="password" type="password" placeholder="Enter Your Password" pattern=".{5,10}" required title="5 to 10 characters"required>
+
+        
+    </div>
+    <div>
+        <label >
+            Birthday:
+            <select>
+                <option >Month</option>
+                <option >Jan</option>
+                <option >Feb</option>
+                <option >Mar</option>
+            </select>
+            <select>
+                <option >Year</option>
+                <option >2000</option>
+                <option >2001</option>
+                <option >2002</option>
+            </select>
+            <select>
+                <option >Day</option>
+                <option >00</option>
+                <option >01</option>
+                <option >02</option>
+            </select>
+
+        </label>
+        <div>
+            <label for="agreed">I agree to terms</label>
+            <label id="agreed" name="agreed" type="checkbox"></label>
+            <input type="checkbox" name="agreed" id="agreed">
+
+
+
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </div>
+    
+    </form>
+
+
+    
+</body>
+</html>
